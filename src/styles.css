@@ -1,0 +1,419 @@
+body {
+    margin: 0;
+    background-color: #eee;
+
+}
+
+header {
+    top: 0;
+    position: sticky;
+
+
+    z-index: 99;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.nav-divider{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.left--links, .right--links{
+    /* height: 20px; */
+    margin-top: 0;
+    padding: 1% 0;
+    position: relative;
+
+
+    z-index: 700;
+    background: #eee;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.main--nav li{
+    position: relative;
+
+    z-index: 700;
+}
+.logo-sec{
+    margin-top: 0;
+    background: #eee;
+    border-radius: 0 0 4rem 4rem;
+
+}
+.logo {
+
+    padding-top: 1%;
+    width: 16%;
+    position: relative;
+    z-index: 1000;
+}
+
+.main--nav {
+
+    z-index: 700;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav--brand {
+    margin-top: 0;
+    padding: 0.5% 0;
+}
+
+.nav--brand,
+.main--nav ul {
+    font-family: "Lato", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: normal;
+    flex: 1;
+
+
+}
+.top--nav{
+    /* top: 50px; */
+    /* width: min-content; */
+    
+    position: relative;
+    z-index: 150;
+}
+.event-title{
+    text-align: center;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mary-img {
+    /* animation: ridet 5s forwards; */
+    /* -webkit-mask: url(../images/buhaha.png);
+    -webkit-mask-size: 300%;
+    -webkit-mask-position: 55% 32%;
+    -webkit-mask-repeat: no-repeat; */
+
+}
+
+/* .cloud {
+    position: absolute;
+    z-index: 15;
+    top: 55%;
+    left: -10%;
+    animation: cloudy 7s infinite linear;
+}
+
+.clouds {
+    position: absolute;
+    z-index: 15;
+    top: 55%;
+    left: 10%;
+    animation: cloudyy 10s infinite linear alternate;
+
+}
+
+@keyframes cloudyy {
+    0% {
+        opacity: 0;
+    }
+
+    30%,
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        scale: 3;
+        translate: -50vw 0 0;
+    }
+
+}
+
+@keyframes cloudy {
+    0% {
+        opacity: 0;
+    }
+
+    30%,
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        scale: 3;
+        translate: 50vw 0 0;
+    }
+}
+
+@keyframes ridet {
+    from {
+        translate: 0 -500px 0;
+    }
+
+    to {
+        translate: 0;
+    }
+
+} */
+
+.event{
+    /* padding: 5% 0; */
+    display: flex;
+    align-items: center;
+    width: 80%;
+    border-radius: 5%;
+    text-align: center;
+    box-shadow: black -0.25em 0.25em 0.5em 0.5em;
+    background-color: #E5A46e;
+}
+.expand:hover{
+    background-color: white;
+    /* transform: translateZ(1vw); */
+}
+.event-wrapper{
+    display: flex;
+}
+.event h3, .event p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:  #125669;
+    padding: 0 4%;
+    text-align: justify;
+}
+.event-img{
+    border-radius: 5% 5% 0 0;
+    width: 100%;
+}
+.announcement{
+    text-align: center;
+    padding: 0 4%;
+}
+.announcements-sec{
+    background-color: #0A5b54;
+    padding: 3% 0;
+
+}
+.announcements{
+    perspective: 1000px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 2rem; */
+    justify-items: center;
+    row-gap: 2rem;
+
+}
+.expanded-content{
+    padding: 0 3%;
+    text-align: justify;
+    background-color: #E5A46e;
+    box-shadow:black 0.1em 0.1em 0.5em;
+
+    flex: 1;
+    /* width: 55%; */
+}
+.expanded-content p{
+    font-size: large;
+}
+.expand{
+    position: relative;
+    left: 1.7vw;
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color:#db5a9a;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+.pandicon{
+    perspective: 1000px;
+    display: flex;
+}
+.pandicon p{
+    width: 80%;
+}
+
+
+@media (maxwidth: 600px) {
+    .announcements{
+        grid-template-columns: 1fr;
+    }
+}
+.event-btn{
+    text-align: center;
+}
+.event-tag{
+    background-color: #db5a9a;
+
+
+}
+.nav--lists {
+    z-index: 40;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:self-start;
+}
+
+.opening {
+    text-align: center;
+    background-color: black;
+}
+.events-container{
+    text-align: center;
+
+    opacity: 0.6;
+}
+.book{
+    border-radius: 5% 0 0 5%;
+    width: 30%;
+    height: 70%;
+}
+
+
+/* baptism */
+.baptism{
+    filter: brightness(0.15);
+
+    width: 90%;
+    height: 30vw;
+    object-fit: cover;
+    object-position: 0 0;
+
+}
+.bapt-container{
+    position: relative;
+    margin-top: 2vw;
+    text-align: center;
+    width: 100%;
+}
+.baptize{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50% 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #74ccf4;
+}
+.calendar-tag{
+
+}
+.actual-announcements{
+    position: relative;
+    text-align: center;
+}
+.announcement-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50% 0;
+}
+.scroll{
+    width: 70%;
+}
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 auto; /* Allow slides to have their own width */
+    opacity: 0.5;
+    width: 20%; /* Set default opacity */
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease; /* Transition for zoom effect */
+}
+
+.blur {
+    filter: blur(2px);
+}
+
+.active {
+    opacity: 1; /* Set opacity for active slide */
+    transform: scale(1.5); /* Zoom out slightly for active slide */
+}
+
+.prev, .next {
+    margin-top: 5vw;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue color, change it to your desired color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .prev {
+    margin-right: 10px; /* Space between buttons */
+  }
+  /* Announcements Section */
+/* Announcements Section */
+.announcements-section {
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    border: 22px solid transparent; /* Adjust border width as needed */
+    border-image: url('../images/crown.png') 150 round; /* Adjust path and size of the image */
+  }
+  
+  .announcements-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #a52a2a; /* Brown text color */
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .announcements-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .announcements-section li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #666; /* Dark gray text color */
+  }
+  
+  .announcements-section li:before {
+    content: "\2022"; /* Bullet character */
+    color: #a52a2a; /* Brown bullet color */
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .sermon-para{
+    text-align: center;
+  }
+  
